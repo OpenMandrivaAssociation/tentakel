@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %py_puresitedir/lekatnet/plugins
 %py_puresitedir/lekatnet/plugins/*
 %py_puresitedir/tentakel-2.2-py2.5.egg-info
-%{_mandir}/man1/tentakel.1.bz2
+%{_mandir}/man1/tentakel.*
 
 
