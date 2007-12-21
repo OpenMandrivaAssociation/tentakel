@@ -11,6 +11,7 @@ Patch0: tentakel-setup.py.patch
 License: GPL
 Group: Networking/Remote access
 Url: http://tentakel.biskalar.de/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildarch: noarch
 requires: python
 Buildrequires: python-devel
