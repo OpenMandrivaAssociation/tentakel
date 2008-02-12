@@ -14,6 +14,7 @@ Url: http://tentakel.biskalar.de/
 Buildarch: noarch
 requires: python
 Buildrequires: python-devel
+BuildRoot:      %{_tmppath}/%{name}-buildroot
 
 %description
 Tentakel is a program that executes the same command on many hosts in parallel 
