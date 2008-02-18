@@ -2,7 +2,7 @@
 %define version 2.2
 %define release %mkrel 3
 
-Summary: Tentakel is a program that executes the same command on many hosts in parallel
+Summary: Program that executes the same command on many hosts in parallel
 Name: %{name}
 Version: %{version}
 Release: %{release}
