@@ -30,14 +30,13 @@ command can be controlled by means of format strings.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%make PREFIX=$RPM_BUILD_ROOT%{_prefix} mandir=$RPM_BUILD_ROOT%{_mandir} sharedoc=$RPM_BUILD_ROOT%{_docdir} install
+%make PREFIX=$RPM_BUILD_ROOT%{_prefix} mandir=$RPM_BUILD_ROOT%{_mandir} install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc PLUGINS README TODO tentakel.1.html tentakel.conf.example
 %{_bindir}/%name
 %dir %py_puresitedir/lekatnet
 %py_puresitedir/lekatnet/*.py*
@@ -45,5 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %py_puresitedir/lekatnet/plugins/*
 %py_puresitedir/tentakel-2.2-py2.5.egg-info
 %{_mandir}/man1/tentakel.*
-
-
+%{_prefix}/share/doc/%name-%version/*
