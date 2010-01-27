@@ -23,7 +23,7 @@ command can be controlled by means of format strings.
 
 %prep
 %setup -q
-%patch -p0
+%patch0 -p0
 
 %build
 %make
@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %py_puresitedir/lekatnet/*.py*
 %dir %py_puresitedir/lekatnet/plugins
 %py_puresitedir/lekatnet/plugins/*
-%py_puresitedir/tentakel-2.2-py2.5.egg-info
+%py_puresitedir/tentakel-*.egg-info
 %{_mandir}/man1/tentakel.*
-%{_defaultdocdir}/%name-%Version/*
+%{_defaultdocdir}/%name/*
