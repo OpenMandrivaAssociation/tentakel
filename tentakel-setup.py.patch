@@ -1,0 +1,11 @@
+--- py/setup.py	2010-01-27 16:50:36.053357007 +0100
++++ py/setup.py.patch	2010-01-27 16:50:27.826606872 +0100
+@@ -17,7 +17,7 @@
+ 
+ 	packages = ["lekatnet", "lekatnet.plugins"],
+ 	scripts = ["tentakel"],
+-	data_files = [	("man/man1", ["../tentakel.1"]),
++	data_files = [	("share/man/man1", ["../tentakel.1"]),
+ 			("share/doc/tentakel", ["../tentakel.conf.example",
+ 						"../README",
+ 						"../TODO",
