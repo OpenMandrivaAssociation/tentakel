@@ -1,6 +1,6 @@
 %define name tentakel
 %define version 2.2
-%define release %mkrel 8
+%define release 9
 
 Summary: Program that executes the same command on many hosts in parallel
 Name: %{name}
