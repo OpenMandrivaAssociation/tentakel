@@ -13,6 +13,7 @@ Group: Networking/Remote access
 Url: https://tentakel.biskalar.de/
 Buildarch: noarch
 requires: python
+BuildRequires:	make
 Buildrequires: python-devel
 BuildRoot:      %{_tmppath}/%{name}-buildroot
 
